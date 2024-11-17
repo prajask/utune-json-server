@@ -355,6 +355,184 @@
           "about": "VoxForge contains voice recordings in multiple languages, collected to support open-source speech recognition. It provides transcribed audio in languages like English, Spanish, and German, aiding the development of ASR models across different languages.",
           "use_cases": "This dataset is ideal for building and training multilingual speech recognition systems, enhancing TTS systems, and improving language-specific ASR in underrepresented languages."
         }
-      ]      
+      ],
+      
+      "projects": [
+        {
+          "id": "model_001",
+          "name": "TextGen-XL",
+          "description": "A large-scale text generation model focused on natural language generation tasks.",
+          "last_updated": "2024-10-15T12:30:00Z",
+          "base_model": "GPT-3",
+          "datasets": [
+            {
+              "id": "dataset_001",
+              "train_split": 80,
+              "test_split": 20
+            },
+            {
+              "id": "dataset_002",
+              "train_split": 75,
+              "test_split": 25
+            }
+          ],
+          "hyperparameters": {
+            "learning_rate": 0.001,
+            "number_of_epochs": 10,
+            "batch_size": 32
+          },
+          "iterations": [
+            {
+              "date": "2024-11-10",
+              "time": "15:30",
+              "hyperparameters": {
+                "learning_rate": 0.001,
+                "number_of_epochs": 10,
+                "batch_size": 32
+              }
+            }
+          ]
+        },
+        {
+          "id": "model_002",
+          "name": "VisionAI-Lite",
+          "description": "A lightweight image classification model for resource-constrained environments.",
+          "last_updated": "2024-11-05T09:45:00Z",
+          "base_model": "ResNet-50",
+          "datasets": [
+            {
+              "id": "dataset_003",
+              "train_split": 70,
+              "test_split": 30
+            }
+          ],
+          "hyperparameters": {
+            "learning_rate": 0.005,
+            "number_of_epochs": 25,
+            "batch_size": 64
+          },
+          "iterations": [
+            {
+              "date": "2024-11-11",
+              "time": "10:15",
+              "hyperparameters": {
+                "learning_rate": 0.004,
+                "number_of_epochs": 25,
+                "batch_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "id": "model_003",
+          "name": "AudioSynth-V1",
+          "description": "A model designed for synthesizing realistic audio sequences based on input prompts.",
+          "last_updated": "2024-10-20T08:10:00Z",
+          "base_model": "WaveNet",
+          "datasets": [
+            {
+              "id": "dataset_004",
+              "train_split": 85,
+              "test_split": 15
+            },
+            {
+              "id": "dataset_005",
+              "train_split": 60,
+              "test_split": 40
+            },
+            {
+              "id": "dataset_006",
+              "train_split": 65,
+              "test_split": 35
+            }
+          ],
+          "hyperparameters": {
+            "learning_rate": 0.0003,
+            "number_of_epochs": 15,
+            "batch_size": 128
+          },
+          "iterations": [
+            {
+              "date": "2024-11-10",
+              "time": "14:50",
+              "hyperparameters": {
+                "learning_rate": 0.0003,
+                "number_of_epochs": 15,
+                "batch_size": 128
+              }
+            }
+          ]
+        },
+        {
+          "id": "model_004",
+          "name": "VideoNet-Pro",
+          "description": "A high-performance model for video frame prediction and enhancement.",
+          "last_updated": "2024-11-07T11:30:00Z",
+          "base_model": "I3D",
+          "datasets": [
+            {
+              "id": "dataset_007",
+              "train_split": 75,
+              "test_split": 25
+            },
+            {
+              "id": "dataset_008",
+              "train_split": 80,
+              "test_split": 20
+            }
+          ],
+          "hyperparameters": {
+            "learning_rate": 0.0015,
+            "number_of_epochs": 20,
+            "batch_size": 16
+          },
+          "iterations": [
+            {
+              "date": "2024-11-09",
+              "time": "09:20",
+              "hyperparameters": {
+                "learning_rate": 0.0014,
+                "number_of_epochs": 20,
+                "batch_size": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "model_005",
+          "name": "BioNLP-Analyzer",
+          "description": "A natural language processing model optimized for biomedical text analysis.",
+          "last_updated": "2024-10-28T13:55:00Z",
+          "base_model": "BERT",
+          "datasets": [
+            {
+              "id": "dataset_009",
+              "train_split": 60,
+              "test_split": 40
+            },
+            {
+              "id": "dataset_010",
+              "train_split": 65,
+              "test_split": 35
+            }
+          ],
+          "hyperparameters": {
+            "learning_rate": 0.0005,
+            "number_of_epochs": 30,
+            "batch_size": 24
+          },
+          "iterations": [
+            {
+              "date": "2024-11-08",
+              "time": "12:45",
+              "hyperparameters": {
+                "learning_rate": 0.0006,
+                "number_of_epochs": 30,
+                "batch_size": 24
+              }
+            }
+          ]
+        }
+      ]        
 }
   
