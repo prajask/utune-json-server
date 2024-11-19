@@ -1,538 +1,649 @@
 {
-    "models": [
-        {
-            "id": "gpt-neo-2.7b",
-            "name": "GPT-Neo 2.7B",
-            "description": "A large-scale transformer-based language model for generating human-like text.",
-            "tags": ["text-generation", "NLP", "transformer"],
-            "reviews": ["review_id_001", "review_id_002", "review_id_003"],
-            "created_in": "2021",
-            "about": "GPT-Neo 2.7B is designed to understand and generate natural language text. Built using transformer architecture, it leverages advanced attention mechanisms, making it capable of completing text, answering questions, and generating human-like responses across various domains. With 2.7 billion parameters, this model demonstrates strong capabilities in language understanding and coherence.",
-            "use_cases": "GPT-Neo 2.7B is ideal for a wide range of language-based applications, including content creation, story generation, conversational AI, and summarization tasks. It can also aid in automated reporting, sentiment analysis, and email drafting, making it a versatile tool for businesses and creators.",
-            "nutritional_info": {
-                "privacy_ladder_level": 4,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 30,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "stable-diffusion-v1.4",
-            "name": "Stable Diffusion v1.4",
-            "description": "A model specialized in generating images from text prompts.",
-            "tags": ["image-generation", "art", "diffusion"],
-            "reviews": ["review_id_004", "review_id_005", "review_id_006"],
-            "created_in": "2022",
-            "about": "Stable Diffusion v1.4 generates detailed, realistic images based on text prompts using a diffusion process. As a state-of-the-art model in the field of image synthesis, it is designed to create high-quality visuals for various artistic and commercial applications. Its structure enables it to translate complex textual prompts into stunning images with fine-grained details.",
-            "use_cases": "Ideal for digital artists, marketing teams, and content creators, Stable Diffusion is used for tasks such as designing visual content, creating photorealistic images, and generating unique illustrations or concept art. It is also suitable for rapid prototyping in creative fields like fashion, architecture, and product design.",
-            "nutritional_info": {
-                "privacy_ladder_level": 3,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 0,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "wav2vec2-large-960h",
-            "name": "Wav2Vec 2.0",
-            "description": "An audio processing model for converting speech to text.",
-            "tags": ["audio-processing", "speech-recognition", "NLP"],
-            "reviews": ["review_id_007", "review_id_008", "review_id_009"],
-            "created_in": "2020",
-            "about": "Wav2Vec 2.0 is an advanced speech recognition model capable of understanding spoken language with high accuracy. Leveraging unsupervised learning, this model has been pre-trained on vast amounts of audio data, enabling it to recognize spoken language with minimal supervision. It has become a valuable tool in converting audio signals into coherent, written text.",
-            "use_cases": "This model is well-suited for transcription services, voice-to-text applications, and enhancing accessibility in multimedia. Common applications include transcription for media production, real-time subtitling, and integrating into virtual assistants for speech recognition functionalities.",
-            "nutritional_info": {
-                "privacy_ladder_level": 5,
-                "base_model_trained_with_user_data": true,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 60,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "blip-image-captioning",
-            "name": "BLIP Image Captioning",
-            "description": "A model that generates descriptive captions for images.",
-            "tags": ["image-captioning", "computer-vision", "NLP"],
-            "reviews": ["review_id_010", "review_id_011", "review_id_012"],
-            "created_in": "2022",
-            "about": "BLIP Image Captioning is designed to interpret and describe visual content through natural language captions. It uses advanced vision-language processing techniques to generate relevant, accurate, and context-aware captions for images. This improves accessibility and enhances the experience for users engaging with visual media.",
-            "use_cases": "Key applications include accessibility features, automatic content labeling, and enhancing searchability in media libraries. It is particularly useful in fields such as digital marketing, e-commerce, and social media platforms for better content organization and discovery.",
-            "nutritional_info": {
-                "privacy_ladder_level": 4,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 30,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "video-transformer",
-            "name": "Video Transformer",
-            "description": "A model for video processing and generation based on input sequences.",
-            "tags": ["video-generation", "transformer", "machine-vision"],
-            "reviews": ["review_id_013", "review_id_014", "review_id_015"],
-            "created_in": "2021",
-            "about": "The Video Transformer model leverages deep learning to process video frames, enabling it to generate new video sequences or enhance existing ones. It works by learning from sequential frames, making it ideal for tasks that require frame-by-frame coherence and continuity in visual content.",
-            "use_cases": "Video Transformer is useful for tasks such as video synthesis, automated editing, and improving frame quality. It has applications in entertainment, education, and digital advertising, where creating or enhancing video content with minimal human intervention is desired.",
-            "nutritional_info": {
-                "privacy_ladder_level": 4,
-                "base_model_trained_with_user_data": true,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 90,
-                "guardrails": true,
-                "io_consistency": false
-            }
-        },
-        {
-            "id": "text-to-speech-fastpitch",
-            "name": "FastPitch TTS",
-            "description": "A model that converts text to high-quality synthesized speech.",
-            "tags": ["text-to-speech", "audio-synthesis", "TTS"],
-            "reviews": ["review_id_016", "review_id_017", "review_id_018"],
-            "created_in": "2021",
-            "about": "FastPitch TTS is a text-to-speech model capable of producing natural-sounding audio from written text. Its design allows for control over various audio parameters, such as pitch, making it suitable for expressive speech synthesis and a range of use cases requiring personalized audio output.",
-            "use_cases": "This model finds applications in virtual assistants, voiceovers, and accessibility tools. It's beneficial for e-learning, audiobooks, and providing spoken content for visually impaired users, giving them access to a wider range of information through high-quality audio.",
-            "nutritional_info": {
-                "privacy_ladder_level": 3,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 15,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "biggan-deep-512",
-            "name": "BigGAN-Deep 512",
-            "description": "A generative adversarial network (GAN) model for generating high-quality, photorealistic images.",
-            "tags": ["image-generation", "GAN", "photorealistic-images"],
-            "reviews": ["review_id_034", "review_id_035", "review_id_036"],
-            "created_in": "2018",
-            "about": "BigGAN-Deep 512 is one of the most advanced generative models designed for high-quality image generation. This GAN-based model is trained on large-scale image datasets and employs a deep network architecture to produce high-resolution, photorealistic images with enhanced detail and accuracy. Its unique structure allows it to capture fine textures, vibrant colors, and realistic shapes, making it ideal for applications in both artistic and commercial contexts.",
-            "use_cases": "BigGAN-Deep 512 is widely used in creative fields, such as digital art and visual content production, to generate unique concept art, enhance product visuals, and create synthetic data for machine learning applications. It is also valuable in fields like architecture, fashion design, and entertainment, where photorealistic images are essential for visualization, marketing, and prototyping. The model can produce a variety of visual styles, making it flexible for diverse use cases requiring high-quality image generation.",
-            "nutritional_info": {
-                "privacy_ladder_level": 2,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 0,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "t5-large",
-            "name": "T5 Large",
-            "description": "A versatile transformer-based model for text generation, translation, and summarization.",
-            "tags": ["NLP", "text-generation", "summarization"],
-            "reviews": ["review_id_022", "review_id_023", "review_id_024"],
-            "created_in": "2020",
-            "about": "T5 Large, or Text-to-Text Transfer Transformer, is a powerful model that frames NLP tasks as a text generation process. By converting various language tasks (like translation and summarization) into a unified text-to-text format, T5 Large allows developers to tackle diverse tasks with a single model.",
-            "use_cases": "T5 Large excels in applications like document summarization, language translation, and question-answering. It’s valuable for research, customer service automation, and educational tools where text interpretation and transformation are required.",
-            "nutritional_info": {
-                "privacy_ladder_level": 5,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 0,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "controlnet",
-            "name": "ControlNet",
-            "description": "A video processing model for editing and enhancing visual frames in real-time.",
-            "tags": ["video-enhancement", "computer-vision", "real-time"],
-            "reviews": ["review_id_025", "review_id_026", "review_id_027"],
-            "created_in": "2022",
-            "about": "ControlNet is designed for precise video processing and frame manipulation, providing real-time video enhancement capabilities. It includes tools for color correction, noise reduction, and feature augmentation, making it a valuable tool for both creative and professional video editing.",
-            "use_cases": "Ideal for film production, live video processing, and streaming, ControlNet allows for automated enhancements in color grading, stabilization, and filtering. It’s widely applicable in broadcasting, content creation, and post-production workflows.",
-            "nutritional_info": {
-                "privacy_ladder_level": 3,
-                "base_model_trained_with_user_data": true,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 45,
-                "guardrails": true,
-                "io_consistency": false
-            }
-        },
-        {
-            "id": "bart-large-cnn",
-            "name": "BART Large CNN",
-            "description": "A model specialized in summarizing lengthy text with high precision.",
-            "tags": ["summarization", "NLP", "transformer"],
-            "reviews": ["review_id_028", "review_id_029", "review_id_030"],
-            "created_in": "2019",
-            "about": "BART Large CNN is a powerful summarization model based on BART (Bidirectional and Auto-Regressive Transformers), adept at processing and condensing large documents. It can handle complex language and summarize information into concise outputs, while retaining the core content of the original.",
-            "use_cases": "Perfect for summarizing news articles, research papers, and long-form content, BART Large CNN is valuable in academia, media, and corporate settings where information overload is common and efficient summarization is essential.",
-            "nutritional_info": {
-                "privacy_ladder_level": 4,
-                "base_model_trained_with_user_data": false,
-                "user_data_shared_with_model_vendor": false,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 30,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        },
-        {
-            "id": "speech-t5",
-            "name": "Speech T5",
-            "description": "A model that can perform multiple speech-related tasks, such as synthesis and recognition.",
-            "tags": ["speech-processing", "NLP", "transformer"],
-            "reviews": ["review_id_031", "review_id_032", "review_id_033"],
-            "created_in": "2021",
-            "about": "Speech T5 brings versatility to speech applications, capable of speech synthesis, recognition, and conversion. Its architecture extends the T5 model’s capabilities to cover audio processing tasks, offering end-to-end solutions for transforming and understanding spoken language.",
-            "use_cases": "This model is ideal for applications in transcription, multilingual TTS (text-to-speech) synthesis, and voice-activated assistants. It finds utility in accessible technology, language learning, and audio-based interfaces for increased engagement and functionality.",
-            "nutritional_info": {
-                "privacy_ladder_level": 5,
-                "base_model_trained_with_user_data": true,
-                "user_data_shared_with_model_vendor": true,
-                "training_data_anonymized": true,
-                "data_deletion": true,
-                "data_retention": 60,
-                "guardrails": true,
-                "io_consistency": true
-            }
-        }
-    ],
-
-    "datasets": [
-        {
-          "id": "bookcorpus",
-          "name": "BookCorpus",
-          "description": "A large dataset of books used for training language models, containing millions of sentences.",
-          "piicompliant": false,
-          "tags": ["text"],
-          "reviews": [],
-          "created_in": "2015",
-          "about": "BookCorpus is a dataset made from thousands of unpublished novels, commonly used for training language models and other NLP applications. It contains a rich variety of genres, making it useful for pre-training and understanding complex language patterns.",
-          "use_cases": "BookCorpus is ideal for pre-training language models, tasks like summarization, translation, and language generation. It is widely used in natural language understanding and creative text generation."
-        },
-        {
-          "id": "coco-2017",
-          "name": "COCO 2017",
-          "description": "A large-scale image dataset used for image captioning, object detection, and segmentation tasks.",
-          "piicompliant": true,
-          "tags": ["image"],
-          "reviews": [],
-          "created_in": "2017",
-          "about": "The COCO 2017 dataset contains over 200,000 labeled images, including pixel-level annotations for segmentation and bounding boxes for object detection. The dataset is commonly used in computer vision tasks due to its detailed labels and large variety of objects.",
-          "use_cases": "COCO 2017 is ideal for image captioning, object detection, and segmentation models, particularly in applications like autonomous driving, robotic vision, and smart cameras."
-        },
-        {
-          "id": "librispeech",
-          "name": "LibriSpeech",
-          "description": "An extensive audio dataset of read English speech, derived from audiobook recordings.",
-          "piicompliant": true,
-          "tags": ["audio"],
-          "reviews": [],
-          "created_in": "2015",
-          "about": "LibriSpeech is a widely used dataset for automatic speech recognition and consists of approximately 1,000 hours of 16kHz read English speech. It was created from audiobooks and includes accurate transcriptions, making it an excellent resource for training ASR models.",
-          "use_cases": "LibriSpeech is suited for training and benchmarking speech recognition systems, including real-time transcription, voice-activated assistants, and accessibility applications for the hearing impaired."
-        },
-        {
-            "id": "dog-breeds",
-            "name": "Dog Breeds Dataset",
-            "description": "A collection of high-quality images of various dog breeds, useful for training models to recognize and differentiate between different types of dogs.",
-            "piicompliant": true,
-            "tags": ["image"],
-            "reviews": [],
-            "created_in": "2022",
-            "about": "The Dog Breeds Dataset consists of thousands of labeled images of dogs from a wide range of breeds. Each image is labeled with the breed name, making it an excellent resource for training computer vision models to identify dog breeds. The dataset captures dogs in various poses and environments, ensuring a diverse and representative sample of each breed.",
-            "use_cases": "This dataset is ideal for building and fine-tuning image classification models for dog breed recognition. Applications include pet identification apps, wildlife studies, and even safety systems for autonomous vehicles that can distinguish between different animals, especially dogs."
-        },
+  "models": [
+    {
+      "id": "gpt-neo-2.7b",
+      "name": "GPT-Neo 2.7B",
+      "description": "A large-scale transformer-based language model for generating human-like text.",
+      "tags": [
+        "text-generation",
+        "NLP",
+        "transformer"
+      ],
+      "reviews": [
+        "review_id_001",
+        "review_id_002",
+        "review_id_003"
+      ],
+      "created_in": "2021",
+      "about": "GPT-Neo 2.7B is designed to understand and generate natural language text. Built using transformer architecture, it leverages advanced attention mechanisms, making it capable of completing text, answering questions, and generating human-like responses across various domains. With 2.7 billion parameters, this model demonstrates strong capabilities in language understanding and coherence.",
+      "use_cases": "GPT-Neo 2.7B is ideal for a wide range of language-based applications, including content creation, story generation, conversational AI, and summarization tasks. It can also aid in automated reporting, sentiment analysis, and email drafting, making it a versatile tool for businesses and creators.",
+      "nutritional_info": {
+        "privacy_ladder_level": 4,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 30,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "stable-diffusion-v1.4",
+      "name": "Stable Diffusion v1.4",
+      "description": "A model specialized in generating images from text prompts.",
+      "tags": [
+        "image-generation",
+        "art",
+        "diffusion"
+      ],
+      "reviews": [
+        "review_id_004",
+        "review_id_005",
+        "review_id_006"
+      ],
+      "created_in": "2022",
+      "about": "Stable Diffusion v1.4 generates detailed, realistic images based on text prompts using a diffusion process. As a state-of-the-art model in the field of image synthesis, it is designed to create high-quality visuals for various artistic and commercial applications. Its structure enables it to translate complex textual prompts into stunning images with fine-grained details.",
+      "use_cases": "Ideal for digital artists, marketing teams, and content creators, Stable Diffusion is used for tasks such as designing visual content, creating photorealistic images, and generating unique illustrations or concept art. It is also suitable for rapid prototyping in creative fields like fashion, architecture, and product design.",
+      "nutritional_info": {
+        "privacy_ladder_level": 3,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 0,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "wav2vec2-large-960h",
+      "name": "Wav2Vec 2.0",
+      "description": "An audio processing model for converting speech to text.",
+      "tags": [
+        "audio-processing",
+        "speech-recognition",
+        "NLP"
+      ],
+      "reviews": [
+        "review_id_007",
+        "review_id_008",
+        "review_id_009"
+      ],
+      "created_in": "2020",
+      "about": "Wav2Vec 2.0 is an advanced speech recognition model capable of understanding spoken language with high accuracy. Leveraging unsupervised learning, this model has been pre-trained on vast amounts of audio data, enabling it to recognize spoken language with minimal supervision. It has become a valuable tool in converting audio signals into coherent, written text.",
+      "use_cases": "This model is well-suited for transcription services, voice-to-text applications, and enhancing accessibility in multimedia. Common applications include transcription for media production, real-time subtitling, and integrating into virtual assistants for speech recognition functionalities.",
+      "nutritional_info": {
+        "privacy_ladder_level": 5,
+        "base_model_trained_with_user_data": true,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 60,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "blip-image-captioning",
+      "name": "BLIP Image Captioning",
+      "description": "A model that generates descriptive captions for images.",
+      "tags": [
+        "image-captioning",
+        "computer-vision",
+        "NLP"
+      ],
+      "reviews": [
+        "review_id_010",
+        "review_id_011",
+        "review_id_012"
+      ],
+      "created_in": "2022",
+      "about": "BLIP Image Captioning is designed to interpret and describe visual content through natural language captions. It uses advanced vision-language processing techniques to generate relevant, accurate, and context-aware captions for images. This improves accessibility and enhances the experience for users engaging with visual media.",
+      "use_cases": "Key applications include accessibility features, automatic content labeling, and enhancing searchability in media libraries. It is particularly useful in fields such as digital marketing, e-commerce, and social media platforms for better content organization and discovery.",
+      "nutritional_info": {
+        "privacy_ladder_level": 4,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 30,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "video-transformer",
+      "name": "Video Transformer",
+      "description": "A model for video processing and generation based on input sequences.",
+      "tags": [
+        "video-generation",
+        "transformer",
+        "machine-vision"
+      ],
+      "reviews": [
+        "review_id_013",
+        "review_id_014",
+        "review_id_015"
+      ],
+      "created_in": "2021",
+      "about": "The Video Transformer model leverages deep learning to process video frames, enabling it to generate new video sequences or enhance existing ones. It works by learning from sequential frames, making it ideal for tasks that require frame-by-frame coherence and continuity in visual content.",
+      "use_cases": "Video Transformer is useful for tasks such as video synthesis, automated editing, and improving frame quality. It has applications in entertainment, education, and digital advertising, where creating or enhancing video content with minimal human intervention is desired.",
+      "nutritional_info": {
+        "privacy_ladder_level": 4,
+        "base_model_trained_with_user_data": true,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 90,
+        "guardrails": true,
+        "io_consistency": false
+      }
+    },
+    {
+      "id": "text-to-speech-fastpitch",
+      "name": "FastPitch TTS",
+      "description": "A model that converts text to high-quality synthesized speech.",
+      "tags": [
+        "text-to-speech",
+        "audio-synthesis",
+        "TTS"
+      ],
+      "reviews": [
+        "review_id_016",
+        "review_id_017",
+        "review_id_018"
+      ],
+      "created_in": "2021",
+      "about": "FastPitch TTS is a text-to-speech model capable of producing natural-sounding audio from written text. Its design allows for control over various audio parameters, such as pitch, making it suitable for expressive speech synthesis and a range of use cases requiring personalized audio output.",
+      "use_cases": "This model finds applications in virtual assistants, voiceovers, and accessibility tools. It's beneficial for e-learning, audiobooks, and providing spoken content for visually impaired users, giving them access to a wider range of information through high-quality audio.",
+      "nutritional_info": {
+        "privacy_ladder_level": 3,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 15,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "biggan-deep-512",
+      "name": "BigGAN-Deep 512",
+      "description": "A generative adversarial network (GAN) model for generating high-quality, photorealistic images.",
+      "tags": [
+        "image-generation",
+        "GAN",
+        "photorealistic-images"
+      ],
+      "reviews": [
+        "review_id_034",
+        "review_id_035",
+        "review_id_036"
+      ],
+      "created_in": "2018",
+      "about": "BigGAN-Deep 512 is one of the most advanced generative models designed for high-quality image generation. This GAN-based model is trained on large-scale image datasets and employs a deep network architecture to produce high-resolution, photorealistic images with enhanced detail and accuracy. Its unique structure allows it to capture fine textures, vibrant colors, and realistic shapes, making it ideal for applications in both artistic and commercial contexts.",
+      "use_cases": "BigGAN-Deep 512 is widely used in creative fields, such as digital art and visual content production, to generate unique concept art, enhance product visuals, and create synthetic data for machine learning applications. It is also valuable in fields like architecture, fashion design, and entertainment, where photorealistic images are essential for visualization, marketing, and prototyping. The model can produce a variety of visual styles, making it flexible for diverse use cases requiring high-quality image generation.",
+      "nutritional_info": {
+        "privacy_ladder_level": 2,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 0,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "t5-large",
+      "name": "T5 Large",
+      "description": "A versatile transformer-based model for text generation, translation, and summarization.",
+      "tags": [
+        "NLP",
+        "text-generation",
+        "summarization"
+      ],
+      "reviews": [
+        "review_id_022",
+        "review_id_023",
+        "review_id_024"
+      ],
+      "created_in": "2020",
+      "about": "T5 Large, or Text-to-Text Transfer Transformer, is a powerful model that frames NLP tasks as a text generation process. By converting various language tasks (like translation and summarization) into a unified text-to-text format, T5 Large allows developers to tackle diverse tasks with a single model.",
+      "use_cases": "T5 Large excels in applications like document summarization, language translation, and question-answering. It’s valuable for research, customer service automation, and educational tools where text interpretation and transformation are required.",
+      "nutritional_info": {
+        "privacy_ladder_level": 5,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 0,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "controlnet",
+      "name": "ControlNet",
+      "description": "A video processing model for editing and enhancing visual frames in real-time.",
+      "tags": [
+        "video-enhancement",
+        "computer-vision",
+        "real-time"
+      ],
+      "reviews": [
+        "review_id_025",
+        "review_id_026",
+        "review_id_027"
+      ],
+      "created_in": "2022",
+      "about": "ControlNet is designed for precise video processing and frame manipulation, providing real-time video enhancement capabilities. It includes tools for color correction, noise reduction, and feature augmentation, making it a valuable tool for both creative and professional video editing.",
+      "use_cases": "Ideal for film production, live video processing, and streaming, ControlNet allows for automated enhancements in color grading, stabilization, and filtering. It’s widely applicable in broadcasting, content creation, and post-production workflows.",
+      "nutritional_info": {
+        "privacy_ladder_level": 3,
+        "base_model_trained_with_user_data": true,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 45,
+        "guardrails": true,
+        "io_consistency": false
+      }
+    },
+    {
+      "id": "bart-large-cnn",
+      "name": "BART Large CNN",
+      "description": "A model specialized in summarizing lengthy text with high precision.",
+      "tags": [
+        "summarization",
+        "NLP",
+        "transformer"
+      ],
+      "reviews": [
+        "review_id_028",
+        "review_id_029",
+        "review_id_030"
+      ],
+      "created_in": "2019",
+      "about": "BART Large CNN is a powerful summarization model based on BART (Bidirectional and Auto-Regressive Transformers), adept at processing and condensing large documents. It can handle complex language and summarize information into concise outputs, while retaining the core content of the original.",
+      "use_cases": "Perfect for summarizing news articles, research papers, and long-form content, BART Large CNN is valuable in academia, media, and corporate settings where information overload is common and efficient summarization is essential.",
+      "nutritional_info": {
+        "privacy_ladder_level": 4,
+        "base_model_trained_with_user_data": false,
+        "user_data_shared_with_model_vendor": false,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 30,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    },
+    {
+      "id": "speech-t5",
+      "name": "Speech T5",
+      "description": "A model that can perform multiple speech-related tasks, such as synthesis and recognition.",
+      "tags": [
+        "speech-processing",
+        "NLP",
+        "transformer"
+      ],
+      "reviews": [
+        "review_id_031",
+        "review_id_032",
+        "review_id_033"
+      ],
+      "created_in": "2021",
+      "about": "Speech T5 brings versatility to speech applications, capable of speech synthesis, recognition, and conversion. Its architecture extends the T5 model’s capabilities to cover audio processing tasks, offering end-to-end solutions for transforming and understanding spoken language.",
+      "use_cases": "This model is ideal for applications in transcription, multilingual TTS (text-to-speech) synthesis, and voice-activated assistants. It finds utility in accessible technology, language learning, and audio-based interfaces for increased engagement and functionality.",
+      "nutritional_info": {
+        "privacy_ladder_level": 5,
+        "base_model_trained_with_user_data": true,
+        "user_data_shared_with_model_vendor": true,
+        "training_data_anonymized": true,
+        "data_deletion": true,
+        "data_retention": 60,
+        "guardrails": true,
+        "io_consistency": true
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "id": "bookcorpus",
+      "name": "BookCorpus",
+      "description": "A large dataset of books used for training language models, containing millions of sentences.",
+      "piicompliant": false,
+      "tags": [
+        "text"
+      ],
+      "reviews": [],
+      "created_in": "2015",
+      "about": "BookCorpus is a dataset made from thousands of unpublished novels, commonly used for training language models and other NLP applications. It contains a rich variety of genres, making it useful for pre-training and understanding complex language patterns.",
+      "use_cases": "BookCorpus is ideal for pre-training language models, tasks like summarization, translation, and language generation. It is widely used in natural language understanding and creative text generation."
+    },
+    {
+      "id": "coco-2017",
+      "name": "COCO 2017",
+      "description": "A large-scale image dataset used for image captioning, object detection, and segmentation tasks.",
+      "piicompliant": true,
+      "tags": [
+        "image"
+      ],
+      "reviews": [],
+      "created_in": "2017",
+      "about": "The COCO 2017 dataset contains over 200,000 labeled images, including pixel-level annotations for segmentation and bounding boxes for object detection. The dataset is commonly used in computer vision tasks due to its detailed labels and large variety of objects.",
+      "use_cases": "COCO 2017 is ideal for image captioning, object detection, and segmentation models, particularly in applications like autonomous driving, robotic vision, and smart cameras."
+    },
+    {
+      "id": "librispeech",
+      "name": "LibriSpeech",
+      "description": "An extensive audio dataset of read English speech, derived from audiobook recordings.",
+      "piicompliant": true,
+      "tags": [
+        "audio"
+      ],
+      "reviews": [],
+      "created_in": "2015",
+      "about": "LibriSpeech is a widely used dataset for automatic speech recognition and consists of approximately 1,000 hours of 16kHz read English speech. It was created from audiobooks and includes accurate transcriptions, making it an excellent resource for training ASR models.",
+      "use_cases": "LibriSpeech is suited for training and benchmarking speech recognition systems, including real-time transcription, voice-activated assistants, and accessibility applications for the hearing impaired."
+    },
+    {
+      "id": "dog-breeds",
+      "name": "Dog Breeds Dataset",
+      "description": "A collection of high-quality images of various dog breeds, useful for training models to recognize and differentiate between different types of dogs.",
+      "piicompliant": true,
+      "tags": [
+        "image"
+      ],
+      "reviews": [],
+      "created_in": "2022",
+      "about": "The Dog Breeds Dataset consists of thousands of labeled images of dogs from a wide range of breeds. Each image is labeled with the breed name, making it an excellent resource for training computer vision models to identify dog breeds. The dataset captures dogs in various poses and environments, ensuring a diverse and representative sample of each breed.",
+      "use_cases": "This dataset is ideal for building and fine-tuning image classification models for dog breed recognition. Applications include pet identification apps, wildlife studies, and even safety systems for autonomous vehicles that can distinguish between different animals, especially dogs."
+    },
+    {
+      "id": "common-voice",
+      "name": "Mozilla Common Voice",
+      "description": "A diverse, crowdsourced audio dataset for training speech recognition models in multiple languages.",
+      "piicompliant": true,
+      "tags": [
+        "audio"
+      ],
+      "reviews": [],
+      "created_in": "2017",
+      "about": "Common Voice is an open-source dataset with millions of voice samples in various languages. Collected through crowdsourcing, it contains text transcriptions and metadata for building multilingual speech recognition models.",
+      "use_cases": "Ideal for building multilingual ASR systems, training TTS models, and creating accessible technology for global users across multiple languages."
+    },
+    {
+      "id": "yelp_reviews",
+      "name": "Yelp Reviews",
+      "description": "A large dataset of Yelp business reviews used for sentiment analysis and NLP research.",
+      "piicompliant": false,
+      "tags": [
+        "text"
+      ],
+      "reviews": [],
+      "created_in": "2019",
+      "about": "This dataset contains millions of user reviews from Yelp, with detailed metadata on businesses, user ratings, and text content. It is a popular choice for sentiment analysis, opinion mining, and recommendation systems.",
+      "use_cases": "Yelp Reviews is widely used for building sentiment classifiers, recommendation engines, and summarization tools, especially for applications in customer feedback and business analysis."
+    },
+    {
+      "id": "squad",
+      "name": "SQuAD",
+      "description": "A dataset for reading comprehension, containing questions and answers based on Wikipedia articles.",
+      "piicompliant": true,
+      "tags": [
+        "text"
+      ],
+      "reviews": [],
+      "created_in": "2016",
+      "about": "Stanford Question Answering Dataset (SQuAD) includes thousands of question-answer pairs based on Wikipedia passages. It is widely used for training and evaluating machine reading comprehension models.",
+      "use_cases": "Primarily used in training question-answering models, SQuAD is essential for virtual assistants, educational tools, and information retrieval systems where accurate answers are critical."
+    },
+    {
+      "id": "audioset",
+      "name": "AudioSet",
+      "description": "An extensive dataset of labeled audio events, covering a wide range of environmental sounds and music.",
+      "piicompliant": true,
+      "tags": [
+        "audio"
+      ],
+      "reviews": [],
+      "created_in": "2017",
+      "about": "AudioSet includes over two million human-labeled 10-second audio clips, encompassing a vast range of sounds from different environments, including music and spoken words. It provides strong multi-label classification capabilities for environmental sounds.",
+      "use_cases": "AudioSet is ideal for training sound classification models in applications like noise detection, audio surveillance, and multimedia content tagging."
+    },
+    {
+      "id": "hmdb51",
+      "name": "HMDB51",
+      "description": "A dataset of 7,000 labeled video clips with 51 action categories, used for action recognition.",
+      "piicompliant": true,
+      "tags": [
+        "video"
+      ],
+      "reviews": [],
+      "created_in": "2011",
+      "about": "HMDB51 is a benchmark video dataset for human action recognition, containing diverse video clips sourced from movies and online videos, with over 51 types of labeled human actions.",
+      "use_cases": "Commonly used in developing and benchmarking action recognition models, HMDB51 is valuable for applications in sports analysis, security, and human-computer interaction."
+    },
+    {
+      "id": "winged-animals",
+      "name": "Winged Animals Dataset",
+      "description": "A dataset consisting of images of animals with wings, designed to help train models for recognizing winged creatures and understanding how they fly.",
+      "piicompliant": true,
+      "tags": [
+        "image"
+      ],
+      "reviews": [],
+      "created_in": "2023",
+      "about": "The Winged Animals Dataset includes images of various animals that have wings, such as birds, bats, and insects. The dataset covers a wide variety of species and flying behaviors, making it useful for training models to identify winged animals and understand patterns in their movement. Each image is labeled with the type of animal and, where applicable, flight actions like hovering, soaring, or perching.",
+      "use_cases": "Perfect for training models in animal recognition, flight pattern analysis, and behavioral studies. It is useful for applications in wildlife monitoring, augmented reality apps for learning about animals, and even drones that are designed to mimic natural flight movements of winged animals."
+    },
+    {
+      "id": "wikitext-103",
+      "name": "WikiText-103",
+      "description": "A large text dataset extracted from Wikipedia, suitable for language modeling tasks.",
+      "piicompliant": true,
+      "tags": [
+        "text"
+      ],
+      "reviews": [],
+      "created_in": "2017",
+      "about": "WikiText-103 is a collection of text from verified Wikipedia articles, focused on language modeling. It provides a structured and comprehensive dataset that enables NLP researchers to train models with a reliable source of text data.",
+      "use_cases": "Commonly used for pre-training language models, WikiText-103 is ideal for tasks like text completion, language generation, and enhancing general knowledge in AI models."
+    },
+    {
+      "id": "voxforge",
+      "name": "VoxForge",
+      "description": "A community-driven, open-source speech corpus with a variety of languages for ASR training.",
+      "piicompliant": true,
+      "tags": [
+        "audio"
+      ],
+      "reviews": [],
+      "created_in": "2006",
+      "about": "VoxForge contains voice recordings in multiple languages, collected to support open-source speech recognition. It provides transcribed audio in languages like English, Spanish, and German, aiding the development of ASR models across different languages.",
+      "use_cases": "This dataset is ideal for building and training multilingual speech recognition systems, enhancing TTS systems, and improving language-specific ASR in underrepresented languages."
+    }
+  ],
+  "projects": [
+    {
+      "id": "speech-t5",
+      "name": "SpeechT5 Transformer",
+      "description": "A transformer model designed for text-to-speech and speech-to-text tasks.",
+      "last_updated": "2024-11-15T14:30:00Z",
+      "base_model_id": "speech-t5",
+      "base_model_name": "Speech T5",
+      "datasets": [
         {
           "id": "common-voice",
           "name": "Mozilla Common Voice",
-          "description": "A diverse, crowdsourced audio dataset for training speech recognition models in multiple languages.",
-          "piicompliant": true,
-          "tags": ["audio"],
-          "reviews": [],
-          "created_in": "2017",
-          "about": "Common Voice is an open-source dataset with millions of voice samples in various languages. Collected through crowdsourcing, it contains text transcriptions and metadata for building multilingual speech recognition models.",
-          "use_cases": "Ideal for building multilingual ASR systems, training TTS models, and creating accessible technology for global users across multiple languages."
-        },
+          "train_split": 85,
+          "test_split": 15
+        }
+      ],
+      "hyperparameters": {
+        "learning_rate": 0.001,
+        "number_of_epochs": 12,
+        "batch_size": 64
+      },
+      "iterations": [
         {
-          "id": "yelp_reviews",
-          "name": "Yelp Reviews",
-          "description": "A large dataset of Yelp business reviews used for sentiment analysis and NLP research.",
-          "piicompliant": false,
-          "tags": ["text"],
-          "reviews": [],
-          "created_in": "2019",
-          "about": "This dataset contains millions of user reviews from Yelp, with detailed metadata on businesses, user ratings, and text content. It is a popular choice for sentiment analysis, opinion mining, and recommendation systems.",
-          "use_cases": "Yelp Reviews is widely used for building sentiment classifiers, recommendation engines, and summarization tools, especially for applications in customer feedback and business analysis."
+          "date": "2024-11-16",
+          "time": "14:30",
+          "hyperparameters": {
+            "learning_rate": 0.001,
+            "number_of_epochs": 12,
+            "batch_size": 64
+          }
+        }
+      ]
+    },
+    {
+      "id": "bart-large-cnn",
+      "name": "BART Large CNN",
+      "description": "An encoder-decoder model optimized for text summarization and translation tasks.",
+      "last_updated": "2024-11-14T12:00:00Z",
+      "base_model_id": "bart-large-cnn",
+      "base_model_name": "BART Large CNN",
+      "datasets": [
+        {
+          "id": "bookcorpus",
+          "name": "BookCorpus",
+          "train_split": 80,
+          "test_split": 20
         },
         {
           "id": "squad",
           "name": "SQuAD",
-          "description": "A dataset for reading comprehension, containing questions and answers based on Wikipedia articles.",
-          "piicompliant": true,
-          "tags": ["text"],
-          "reviews": [],
-          "created_in": "2016",
-          "about": "Stanford Question Answering Dataset (SQuAD) includes thousands of question-answer pairs based on Wikipedia passages. It is widely used for training and evaluating machine reading comprehension models.",
-          "use_cases": "Primarily used in training question-answering models, SQuAD is essential for virtual assistants, educational tools, and information retrieval systems where accurate answers are critical."
+          "train_split": 90,
+          "test_split": 10
+        }
+      ],
+      "hyperparameters": {
+        "learning_rate": 0.0005,
+        "number_of_epochs": 15,
+        "batch_size": 32
+      },
+      "iterations": [
+        {
+          "date": "2024-11-13",
+          "time": "10:00",
+          "hyperparameters": {
+            "learning_rate": 0.0005,
+            "number_of_epochs": 15,
+            "batch_size": 32
+          }
+        }
+      ]
+    },
+    {
+      "id": "controlnet",
+      "name": "ControlNet",
+      "description": "A controllable neural network for detailed image generation based on user input.",
+      "last_updated": "2024-11-12T10:45:00Z",
+      "base_model_id": "controlnet",
+      "base_model_name": "ControlNet",
+      "datasets": [],
+      "hyperparameters": {
+        "learning_rate": 0.002,
+        "number_of_epochs": 20,
+        "batch_size": 16
+      },
+      "iterations": [
+        {
+          "date": "2024-11-11",
+          "time": "09:30",
+          "hyperparameters": {
+            "learning_rate": 0.002,
+            "number_of_epochs": 20,
+            "batch_size": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5-large",
+      "name": "T5 Large Transformer",
+      "description": "A versatile transformer model for text-to-text generation tasks including summarization and question answering.",
+      "last_updated": "2024-11-10T08:30:00Z",
+      "base_model_id": "t5-large",
+      "base_model_name": "T5 Large",
+      "datasets": [
+        {
+          "id": "dog-breeds",
+          "name": "Dog Breeds Dataset",
+          "train_split": 70,
+          "test_split": 30
         },
         {
-          "id": "audioset",
-          "name": "AudioSet",
-          "description": "An extensive dataset of labeled audio events, covering a wide range of environmental sounds and music.",
-          "piicompliant": true,
-          "tags": ["audio"],
-          "reviews": [],
-          "created_in": "2017",
-          "about": "AudioSet includes over two million human-labeled 10-second audio clips, encompassing a vast range of sounds from different environments, including music and spoken words. It provides strong multi-label classification capabilities for environmental sounds.",
-          "use_cases": "AudioSet is ideal for training sound classification models in applications like noise detection, audio surveillance, and multimedia content tagging."
-        },
-        {
-          "id": "hmdb51",
-          "name": "HMDB51",
-          "description": "A dataset of 7,000 labeled video clips with 51 action categories, used for action recognition.",
-          "piicompliant": true,
-          "tags": ["video"],
-          "reviews": [],
-          "created_in": "2011",
-          "about": "HMDB51 is a benchmark video dataset for human action recognition, containing diverse video clips sourced from movies and online videos, with over 51 types of labeled human actions.",
-          "use_cases": "Commonly used in developing and benchmarking action recognition models, HMDB51 is valuable for applications in sports analysis, security, and human-computer interaction."
-        },
-        {
-            "id": "winged-animals",
-            "name": "Winged Animals Dataset",
-            "description": "A dataset consisting of images of animals with wings, designed to help train models for recognizing winged creatures and understanding how they fly.",
-            "piicompliant": true,
-            "tags": ["image"],
-            "reviews": [],
-            "created_in": "2023",
-            "about": "The Winged Animals Dataset includes images of various animals that have wings, such as birds, bats, and insects. The dataset covers a wide variety of species and flying behaviors, making it useful for training models to identify winged animals and understand patterns in their movement. Each image is labeled with the type of animal and, where applicable, flight actions like hovering, soaring, or perching.",
-            "use_cases": "Perfect for training models in animal recognition, flight pattern analysis, and behavioral studies. It is useful for applications in wildlife monitoring, augmented reality apps for learning about animals, and even drones that are designed to mimic natural flight movements of winged animals."
-        },
-        {
-          "id": "wikitext-103",
-          "name": "WikiText-103",
-          "description": "A large text dataset extracted from Wikipedia, suitable for language modeling tasks.",
-          "piicompliant": true,
-          "tags": ["text"],
-          "reviews": [],
-          "created_in": "2017",
-          "about": "WikiText-103 is a collection of text from verified Wikipedia articles, focused on language modeling. It provides a structured and comprehensive dataset that enables NLP researchers to train models with a reliable source of text data.",
-          "use_cases": "Commonly used for pre-training language models, WikiText-103 is ideal for tasks like text completion, language generation, and enhancing general knowledge in AI models."
+          "id": "coco-2017",
+          "name": "COCO 2017",
+          "train_split": 80,
+          "test_split": 20
         },
         {
           "id": "voxforge",
           "name": "VoxForge",
-          "description": "A community-driven, open-source speech corpus with a variety of languages for ASR training.",
-          "piicompliant": true,
-          "tags": ["audio"],
-          "reviews": [],
-          "created_in": "2006",
-          "about": "VoxForge contains voice recordings in multiple languages, collected to support open-source speech recognition. It provides transcribed audio in languages like English, Spanish, and German, aiding the development of ASR models across different languages.",
-          "use_cases": "This dataset is ideal for building and training multilingual speech recognition systems, enhancing TTS systems, and improving language-specific ASR in underrepresented languages."
+          "train_split": 80,
+          "test_split": 20
         }
       ],
-      
-      "projects": [
+      "hyperparameters": {
+        "learning_rate": 0.0015,
+        "number_of_epochs": 10,
+        "batch_size": 64
+      },
+      "iterations": [
         {
-          "id": "model_001",
-          "name": "TextGen-XL",
-          "description": "A large-scale text generation model focused on natural language generation tasks.",
-          "last_updated": "2024-10-15T12:30:00Z",
-          "base_model": "GPT-3",
-          "datasets": [
-            {
-              "id": "dataset_001",
-              "train_split": 80,
-              "test_split": 20
-            },
-            {
-              "id": "dataset_002",
-              "train_split": 75,
-              "test_split": 25
-            }
-          ],
-          "hyperparameters": {
-            "learning_rate": 0.001,
-            "number_of_epochs": 10,
-            "batch_size": 32
-          },
-          "iterations": [
-            {
-              "date": "2024-11-10",
-              "time": "15:30",
-              "hyperparameters": {
-                "learning_rate": 0.001,
-                "number_of_epochs": 10,
-                "batch_size": 32
-              }
-            }
-          ]
-        },
-        {
-          "id": "model_002",
-          "name": "VisionAI-Lite",
-          "description": "A lightweight image classification model for resource-constrained environments.",
-          "last_updated": "2024-11-05T09:45:00Z",
-          "base_model": "ResNet-50",
-          "datasets": [
-            {
-              "id": "dataset_003",
-              "train_split": 70,
-              "test_split": 30
-            }
-          ],
-          "hyperparameters": {
-            "learning_rate": 0.005,
-            "number_of_epochs": 25,
-            "batch_size": 64
-          },
-          "iterations": [
-            {
-              "date": "2024-11-11",
-              "time": "10:15",
-              "hyperparameters": {
-                "learning_rate": 0.004,
-                "number_of_epochs": 25,
-                "batch_size": 64
-              }
-            }
-          ]
-        },
-        {
-          "id": "model_003",
-          "name": "AudioSynth-V1",
-          "description": "A model designed for synthesizing realistic audio sequences based on input prompts.",
-          "last_updated": "2024-10-20T08:10:00Z",
-          "base_model": "WaveNet",
-          "datasets": [
-            {
-              "id": "dataset_004",
-              "train_split": 85,
-              "test_split": 15
-            },
-            {
-              "id": "dataset_005",
-              "train_split": 60,
-              "test_split": 40
-            },
-            {
-              "id": "dataset_006",
-              "train_split": 65,
-              "test_split": 35
-            }
-          ],
-          "hyperparameters": {
-            "learning_rate": 0.0003,
-            "number_of_epochs": 15,
-            "batch_size": 128
-          },
-          "iterations": [
-            {
-              "date": "2024-11-10",
-              "time": "14:50",
-              "hyperparameters": {
-                "learning_rate": 0.0003,
-                "number_of_epochs": 15,
-                "batch_size": 128
-              }
-            }
-          ]
-        },
-        {
-          "id": "model_004",
-          "name": "VideoNet-Pro",
-          "description": "A high-performance model for video frame prediction and enhancement.",
-          "last_updated": "2024-11-07T11:30:00Z",
-          "base_model": "I3D",
-          "datasets": [
-            {
-              "id": "dataset_007",
-              "train_split": 75,
-              "test_split": 25
-            },
-            {
-              "id": "dataset_008",
-              "train_split": 80,
-              "test_split": 20
-            }
-          ],
+          "date": "2024-11-09",
+          "time": "07:45",
           "hyperparameters": {
             "learning_rate": 0.0015,
-            "number_of_epochs": 20,
-            "batch_size": 16
-          },
-          "iterations": [
-            {
-              "date": "2024-11-09",
-              "time": "09:20",
-              "hyperparameters": {
-                "learning_rate": 0.0014,
-                "number_of_epochs": 20,
-                "batch_size": 16
-              }
-            }
-          ]
+            "number_of_epochs": 10,
+            "batch_size": 64
+          }
+        }
+      ]
+    },
+    {
+      "id": "biggan-deep-512",
+      "name": "BigGAN Deep 512",
+      "description": "A high-capacity generative adversarial network for detailed and high-resolution image generation.",
+      "last_updated": "2024-11-11T15:20:00Z",
+      "base_model_id": "biggan-deep-512",
+      "base_model_name": "BigGAN Deep 512",
+      "datasets": [
+        {
+          "id": "librispeech",
+          "name": "LibriSpeech",
+          "train_split": 85,
+          "test_split": 15
         },
         {
-          "id": "model_005",
-          "name": "BioNLP-Analyzer",
-          "description": "A natural language processing model optimized for biomedical text analysis.",
-          "last_updated": "2024-10-28T13:55:00Z",
-          "base_model": "BERT",
-          "datasets": [
-            {
-              "id": "dataset_009",
-              "train_split": 60,
-              "test_split": 40
-            },
-            {
-              "id": "dataset_010",
-              "train_split": 65,
-              "test_split": 35
-            }
-          ],
-          "hyperparameters": {
-            "learning_rate": 0.0005,
-            "number_of_epochs": 30,
-            "batch_size": 24
-          },
-          "iterations": [
-            {
-              "date": "2024-11-08",
-              "time": "12:45",
-              "hyperparameters": {
-                "learning_rate": 0.0006,
-                "number_of_epochs": 30,
-                "batch_size": 24
-              }
-            }
-          ]
+          "id": "winged-animals",
+          "name": "Winged Animals Dataset",
+          "train_split": 75,
+          "test_split": 25
         }
-      ]        
+      ],
+      "hyperparameters": {
+        "learning_rate": 0.0025,
+        "number_of_epochs": 30,
+        "batch_size": 32
+      },
+      "iterations": [
+        {
+          "date": "2024-11-08",
+          "time": "16:30",
+          "hyperparameters": {
+            "learning_rate": 0.0025,
+            "number_of_epochs": 30,
+            "batch_size": 32
+          }
+        }
+      ]
+    }
+  ]
 }
-  
