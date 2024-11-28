@@ -12,7 +12,7 @@
         "review_id_002",
         "review_id_003"
       ],
-      "rating":  4.5,
+      "rating": 4.5,
       "created_in": "2021",
       "about": "GPT-Neo 2.7B is designed to understand and generate natural language text. Built using transformer architecture, it leverages advanced attention mechanisms, making it capable of completing text, answering questions, and generating human-like responses across various domains. With 2.7 billion parameters, this model demonstrates strong capabilities in language understanding and coherence.",
       "use_cases": "GPT-Neo 2.7B is ideal for a wide range of language-based applications, including content creation, story generation, conversational AI, and summarization tasks. It can also aid in automated reporting, sentiment analysis, and email drafting, making it a versatile tool for businesses and creators.",
@@ -66,7 +66,7 @@
         "review_id_008",
         "review_id_009"
       ],
-      "rating": 3.0,
+      "rating": 3,
       "created_in": "2020",
       "about": "Wav2Vec 2.0 is an advanced speech recognition model capable of understanding spoken language with high accuracy. Leveraging unsupervised learning, this model has been pre-trained on vast amounts of audio data, enabling it to recognize spoken language with minimal supervision. It has become a valuable tool in converting audio signals into coherent, written text.",
       "use_cases": "This model is well-suited for transcription services, voice-to-text applications, and enhancing accessibility in multimedia. Common applications include transcription for media production, real-time subtitling, and integrating into virtual assistants for speech recognition functionalities.",
@@ -93,7 +93,7 @@
         "review_id_011",
         "review_id_012"
       ],
-      "rating": 2.5,
+      "rating": 4.5,
       "created_in": "2022",
       "about": "BLIP Image Captioning is designed to interpret and describe visual content through natural language captions. It uses advanced vision-language processing techniques to generate relevant, accurate, and context-aware captions for images. This improves accessibility and enhances the experience for users engaging with visual media.",
       "use_cases": "Key applications include accessibility features, automatic content labeling, and enhancing searchability in media libraries. It is particularly useful in fields such as digital marketing, e-commerce, and social media platforms for better content organization and discovery.",
@@ -120,7 +120,7 @@
         "review_id_014",
         "review_id_015"
       ],
-      "rating": 4.0,
+      "rating": 4,
       "created_in": "2021",
       "about": "The Video Transformer model leverages deep learning to process video frames, enabling it to generate new video sequences or enhance existing ones. It works by learning from sequential frames, making it ideal for tasks that require frame-by-frame coherence and continuity in visual content.",
       "use_cases": "Video Transformer is useful for tasks such as video synthesis, automated editing, and improving frame quality. It has applications in entertainment, education, and digital advertising, where creating or enhancing video content with minimal human intervention is desired.",
@@ -147,7 +147,7 @@
         "review_id_017",
         "review_id_018"
       ],
-      "rating": 2.0,
+      "rating": 2,
       "created_in": "2021",
       "about": "FastPitch TTS is a text-to-speech model capable of producing natural-sounding audio from written text. Its design allows for control over various audio parameters, such as pitch, making it suitable for expressive speech synthesis and a range of use cases requiring personalized audio output.",
       "use_cases": "This model finds applications in virtual assistants, voiceovers, and accessibility tools. It's beneficial for e-learning, audiobooks, and providing spoken content for visually impaired users, giving them access to a wider range of information through high-quality audio.",
@@ -174,7 +174,7 @@
         "review_id_035",
         "review_id_036"
       ],
-      "rating": 5.0,
+      "rating": 5,
       "created_in": "2018",
       "about": "BigGAN-Deep 512 is one of the most advanced generative models designed for high-quality image generation. This GAN-based model is trained on large-scale image datasets and employs a deep network architecture to produce high-resolution, photorealistic images with enhanced detail and accuracy. Its unique structure allows it to capture fine textures, vibrant colors, and realistic shapes, making it ideal for applications in both artistic and commercial contexts.",
       "use_cases": "BigGAN-Deep 512 is widely used in creative fields, such as digital art and visual content production, to generate unique concept art, enhance product visuals, and create synthetic data for machine learning applications. It is also valuable in fields like architecture, fashion design, and entertainment, where photorealistic images are essential for visualization, marketing, and prototyping. The model can produce a variety of visual styles, making it flexible for diverse use cases requiring high-quality image generation.",
@@ -228,7 +228,7 @@
         "review_id_026",
         "review_id_027"
       ],
-      "rating": 1.0,
+      "rating": 1,
       "created_in": "2022",
       "about": "ControlNet is designed for precise video processing and frame manipulation, providing real-time video enhancement capabilities. It includes tools for color correction, noise reduction, and feature augmentation, making it a valuable tool for both creative and professional video editing.",
       "use_cases": "Ideal for film production, live video processing, and streaming, ControlNet allows for automated enhancements in color grading, stabilization, and filtering. It’s widely applicable in broadcasting, content creation, and post-production workflows.",
@@ -255,7 +255,7 @@
         "review_id_029",
         "review_id_030"
       ],
-      "rating": 4.0,
+      "rating": 4,
       "created_in": "2019",
       "about": "BART Large CNN is a powerful summarization model based on BART (Bidirectional and Auto-Regressive Transformers), adept at processing and condensing large documents. It can handle complex language and summarize information into concise outputs, while retaining the core content of the original.",
       "use_cases": "Perfect for summarizing news articles, research papers, and long-form content, BART Large CNN is valuable in academia, media, and corporate settings where information overload is common and efficient summarization is essential.",
@@ -308,7 +308,7 @@
         "text"
       ],
       "reviews": [],
-      "rating": 4.0,
+      "rating": 1,
       "created_in": "2015",
       "about": "BookCorpus is a dataset made from thousands of unpublished novels, commonly used for training language models and other NLP applications. It contains a rich variety of genres, making it useful for pre-training and understanding complex language patterns.",
       "use_cases": "BookCorpus is ideal for pre-training language models, tasks like summarization, translation, and language generation. It is widely used in natural language understanding and creative text generation."
@@ -337,7 +337,7 @@
         "audio"
       ],
       "reviews": [],
-      "rating": 3.0,
+      "rating": 3,
       "created_in": "2015",
       "about": "LibriSpeech is a widely used dataset for automatic speech recognition and consists of approximately 1,000 hours of 16kHz read English speech. It was created from audiobooks and includes accurate transcriptions, making it an excellent resource for training ASR models.",
       "use_cases": "LibriSpeech is suited for training and benchmarking speech recognition systems, including real-time transcription, voice-activated assistants, and accessibility applications for the hearing impaired."
@@ -352,7 +352,7 @@
         "text"
       ],
       "reviews": [],
-      "rating": 2.5,
+      "rating": 4,
       "created_in": "2022",
       "about": "The Dog Breeds Dataset consists of thousands of labeled images of dogs from a wide range of breeds. Each image is labeled with the breed name, making it an excellent resource for training computer vision models to identify dog breeds. The dataset captures dogs in various poses and environments, ensuring a diverse and representative sample of each breed.",
       "use_cases": "This dataset is ideal for building and fine-tuning image classification models for dog breed recognition. Applications include pet identification apps, wildlife studies, and even safety systems for autonomous vehicles that can distinguish between different animals, especially dogs."
@@ -380,7 +380,7 @@
         "text"
       ],
       "reviews": [],
-      "rating": 5.0,
+      "rating": 2,
       "created_in": "2019",
       "about": "This dataset contains millions of user reviews from Yelp, with detailed metadata on businesses, user ratings, and text content. It is a popular choice for sentiment analysis, opinion mining, and recommendation systems.",
       "use_cases": "Yelp Reviews is widely used for building sentiment classifiers, recommendation engines, and summarization tools, especially for applications in customer feedback and business analysis."
@@ -408,7 +408,7 @@
         "audio"
       ],
       "reviews": [],
-      "rating": 4.0,
+      "rating": 4,
       "created_in": "2017",
       "about": "AudioSet includes over two million human-labeled 10-second audio clips, encompassing a vast range of sounds from different environments, including music and spoken words. It provides strong multi-label classification capabilities for environmental sounds.",
       "use_cases": "AudioSet is ideal for training sound classification models in applications like noise detection, audio surveillance, and multimedia content tagging."
@@ -423,7 +423,7 @@
         "text"
       ],
       "reviews": [],
-      "rating": 3.0,
+      "rating": 3,
       "created_in": "2011",
       "about": "HMDB51 is a benchmark video dataset for human action recognition, containing diverse video clips sourced from movies and online videos, with over 51 types of labeled human actions.",
       "use_cases": "Commonly used in developing and benchmarking action recognition models, HMDB51 is valuable for applications in sports analysis, security, and human-computer interaction."
@@ -437,7 +437,7 @@
         "image"
       ],
       "reviews": [],
-      "rating": 5.0,
+      "rating": 5,
       "created_in": "2023",
       "about": "The Winged Animals Dataset includes images of various animals that have wings, such as birds, bats, and insects. The dataset covers a wide variety of species and flying behaviors, making it useful for training models to identify winged animals and understand patterns in their movement. Each image is labeled with the type of animal and, where applicable, flight actions like hovering, soaring, or perching.",
       "use_cases": "Perfect for training models in animal recognition, flight pattern analysis, and behavioral studies. It is useful for applications in wildlife monitoring, augmented reality apps for learning about animals, and even drones that are designed to mimic natural flight movements of winged animals."
